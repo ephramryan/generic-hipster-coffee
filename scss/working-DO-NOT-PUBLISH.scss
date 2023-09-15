@@ -1,18 +1,245 @@
 html {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-// start working below here
+@mixin flex-direction {
+  display: flex;
+  flex-direction: row;
+}
 
-// STYLE NAV HERE
+$primary-color: #33393f;
+$secondary-color: #f7f9f9;
+$tertiary-color: #078ce5;
 
+.header__container {
+  background-color: $secondary-color;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & ul {
+    text-align: center;
+    padding: 0;
+  }
+  & ul li {
+    list-style-type: none;
+    padding: 1rem;
+  }
+}
 
+header a {
+  text-decoration: none;
+  color: $primary-color;
+  &:hover {
+    color: black;
+    font-weight: 500;
+  }
+}
 
+.logo {
+  height: 80%;
+  padding: 0.5rem;
+  margin-bottom: -1.5rem;
+}
 
-// STYLE FOOTER HERE
+.nav__list-container {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    & ul li {
+      margin: 0;
+      white-space: nowrap;
+    }
+    & .logo {
+      padding-left: 8rem;
+    }
+    & .nav__list-container {
+      padding-right: 8rem;
+    }
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100vw;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  // text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 40px;
+  margin-left: 5%;
+}
+.NON-ALCOHOLIC {
+  margin-left: 5%;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.main-box-box1-ESPRESSO-COFFEE,
+.main-box-box1-FILTER-COFFEE,
+.main-box-box1-COFFEE-SPECIALITES,
+.main-box-box2-ICED,
+.main-box-box2-HOT,
+.main-box-box3-LEMONADES,
+.main-box-box3-WATER,
+.flexing-box-one,
+.main-box-box3,
+.main-box-box2 {
+  @include flex-direction;
+}
+
+ul {
+  font-size: smaller;
+  padding: 0;
+}
+.iced-hot-title {
+  @include flex-direction;
+}
+.lemonades-water-title {
+  @include flex-direction;
+}
+
+.flexing-box-one,
+.main-box-box2,
+.main-box-box3 {
+  justify-content: space-around;
+}
+.iced-hot-title,
+.lemonades-water-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-box-box1-FILTER-COFFEE,
+// .main-box-box2-ICED,
+.main-box-box1-COFFEE-SPECIALITES,
+.main-box-box1-ESPRESSO-COFFEE {
+  @include flex-direction;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  background-color: $primary-color;
+  color: white;
+  font-weight: lighter;
+  padding-bottom: 2rem;
+  margin-top: -2rem;
+  & a {
+    color: $tertiary-color;
+  }
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+
+  & li {
+    list-style-type: none;
+    padding: 1rem;
+  }
+}
+
+.footer-nav__motto {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.ICED-FLEXING,
+.HOT-FLEXING {
+  display: flex;
+  justify-content: space-between;
+}
+.main-box-box2-ICED,
+.main-box-box2-HOT {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-box-box1 {
+  width: 40%;
+}
+.main-box-box2-ICED,
+.main-box-box2-HOT {
+  width: 40%;
+}
+
+.main-box-box3-LEMONADES,
+.main-box-box3-WATER {
+  flex-direction: column;
+  width: 40%;
+}
+
+.main-box-box3 {
+  justify-content: space-around;
+  @include flex-direction;
+}
+
+.LEMON-WATER-FLEXING,
+.main-box-box3-WATER {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  text-align: center;
+}
+
+.main-box-box3-WATER {
+  flex-direction: column;
+}
+.FLEXING-WATER {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  width: 40%;
+  display: flex;
+  margin-left: 30%;
+
+  z-index: 1;
+}
+.box-FILTER-COFFEEE-and-COFFEE-SPECIALITES {
+  width: 40%;
+}
