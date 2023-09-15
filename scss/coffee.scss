@@ -9,3 +9,51 @@ html {
 }
 
 // start working below here
+$primary-color: #33393F;
+$secondary-color: #F7F9F9;
+$tertiary-color: #078CE5;
+$width-mobile: 16rem;
+// @media (min-width: 768px) and (max-width: 768px){
+
+// }
+// body {
+//     font-family: 'Roboto Condensed', sans-serif;
+//     margin:0 auto;
+//     width:80%
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100vw;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    text-align: center;
+  }
+
+
+ main-content{
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom: 1rem;
+
+    .coffee_boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+background: color gray; 
+padding:50%;
+
+.coffee_boxes_text{
+    background-color: gray;
+      line-height: 1.3rem;
+      margin: 0 1rem 0 1rem;
+      padding: 1rem;
+     
+
+img{
+    max-width: $width-mobile - 1rem;
+}
+    }
+ }
+}
