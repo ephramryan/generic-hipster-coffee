@@ -113,9 +113,9 @@ p {
 
     @media(min-width: 1024px) {
         .heading {
-         width: 90%;
-         margin-left: 7rem;
-         margin-right:7rem;
+         width: 75%;
+         margin-left: 12rem;
+         margin-right:9rem;
         }
         
     }
@@ -128,7 +128,7 @@ p {
     justify-content: center;
     @media (min-width: 1024px) {
         display: flex;
-        max-width: 80%;
+        max-width: 70%;
         flex-wrap:wrap;
         justify-content: space-between;
         margin: auto;
@@ -141,9 +141,10 @@ p {
         align-items: center;
         background-color: #eff1f1; 
         margin-bottom: 1rem;
+    
         @media (min-width: 1024px) {
             
-            width: 40%;
+            width: 48%;
         }
         
 
