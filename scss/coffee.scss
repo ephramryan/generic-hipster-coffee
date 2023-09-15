@@ -135,6 +135,15 @@ p {
     align-items: center;
     background-color: #eff1f1;
     margin-bottom: 1rem;
+    top: -50px;
+    left: -35px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    box-shadow: 0 10px 13px -7px rgba(0, 0, 0, 0.4), 0 0 5px 2px transparent;
 
     @media (min-width: 1024px) {
       width: 48%;
@@ -159,6 +168,10 @@ hr {
   & a {
     color: $tertiary-color;
   }
+}
+
+.coffee_boxes:hover {
+  transform: scale(1.02);
 }
 
 footer ul {
