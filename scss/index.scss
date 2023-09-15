@@ -54,7 +54,7 @@ p {
 
 .header__container {
   background-color: $secondary-color;
-//   height: 40vh;
+  //   height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,14 +69,14 @@ p {
 }
 
 .header__container-important {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .home {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 header a {
@@ -102,15 +102,14 @@ header a {
 }
 
 .intro__container {
-  
   flex-direction: column;
   align-items: center;
   white-space: wrap;
   text-align: justify;
   font-weight: lighter;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
   & h1 {
     text-align: left;
     padding-left: 2rem;
@@ -141,23 +140,24 @@ div {
 }
 
 .basic-info__main-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .google-map__container {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 700px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 1;
 }
 
 iframe {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-nav {
@@ -167,9 +167,13 @@ iframe {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: -2rem;
-  z-index: -1;
-  & a {
+  a {
     color: $tertiary-color;
+
+    &.home__footer {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -191,11 +195,14 @@ footer ul {
   color: white;
 }
 
+a {
+  cursor: pointer;
+}
 
 // MEDIA
 
 @media (min-width: 720px) {
-   .header__container-important {
+  .header__container-important {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -205,10 +212,10 @@ footer ul {
     margin: 0 auto;
     max-width: 700px;
     padding-right: 2rem;
-}
-.logo {
+  }
+  .logo {
     margin-bottom: 0;
-}
+  }
 }
 
 @media (min-width: 720px) {
@@ -225,13 +232,12 @@ footer ul {
     margin: 0 auto;
     max-width: 700px;
   }
-
 }
 
 @media (min-width: 720px) {
-    .basic-info__main-container {
+  .basic-info__main-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     width: 100%;
     margin: 0 auto;
     max-width: 700px;
@@ -239,9 +245,8 @@ footer ul {
     padding-right: 2rem;
     text-align: left;
     & .basic-info__info {
-        flex: 1;
-        overflow: hidden;
+      flex: 1;
+      overflow: hidden;
     }
+  }
 }
-}
-
